@@ -1,4 +1,6 @@
+/* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
 export default {
   content: [
     "./index.html",
@@ -6,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {},
+    screens: {
+      'xs': '475px',
+      ...defaultTheme.screens,
+    },
   },
   plugins: [],
 }

@@ -6,7 +6,7 @@ import Footer from './Footer'
 
 function Layout() {
   return (
-    <>
+    <div>
         {/* Layout */}
         <div id="hero">
           <Nav />
@@ -16,7 +16,7 @@ function Layout() {
         {/* <div id="footer"> */}
           <Footer />
         {/* </div> */}
-    </>
+    </div>
   )
 }
 

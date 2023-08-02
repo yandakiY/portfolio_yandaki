@@ -4,12 +4,12 @@ import '../static/css/Hero.css'
 
 function Hero() {
   return (
-    <div className="flex flex-col justify-center items-center mx-4 my-4 gap-2.5">
+    <div className="flex flex-col justify-center items-center mx-4 mt-12 md:my-4 gap-2.5">
         <div className="flex flex-col justify-center items-center font-bold mt-12 text-4xl sm:text-6xl gap-2.5">
           <p className="job" id="">Software Engineer. </p>
           <p className='mt-28 text-3xl sm:text-5xl' id="">Hello world, I'm Yandaki</p>
         </div>
-        <div className='text-lg sm:text-2xl flex flex-column items-center text-center' id="description">
+        <div className='text-lg md:text-2xl flex flex-column items-center text-center' id="description">
           <p>
             A passionate Software Engineer specializing in web development with expertise in <span className='font-bold underline'>React</span> and <span className='font-bold underline'>Python (Django)</span>. 
             My goal is to create powerful, intuitive and elegant web applications. 
@@ -18,8 +18,9 @@ function Hero() {
             Together, we can push the limits of the possible! */}
           </p>
         </div>
+        
         <div id="">
-          <ul className="flex flex-row justify-center gap-10 mt-14">
+          <ul className="flex flex-row justify-center gap-10 mt-2 md:mt-14">
             <li className='list-none'>
               <a className='flex flex-row items-center gap-1 sm:gap-3 text-white bg-black hover:bg-gray-500 font-bold p-1 sm:p-3 rounded transition duration-500 ease-out hover:ease-in' target={'_blank'} href="https://github.com/yandakiY" rel="noreferrer">
                 Github
