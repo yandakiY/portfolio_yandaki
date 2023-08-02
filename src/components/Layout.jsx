@@ -45,10 +45,6 @@ function Layout() {
 
   return (
     <div>
-        {/* Layout */}
-        {/* <div>
-          <Load />
-        </div> */}
         <div id="top">
           <Nav id="nav" />
           <Hero id="hero" />

@@ -10,7 +10,7 @@ function Nav() {
         <span className='text-xl sm:text-5xl mb-4'>Yandaki.dev</span>
         <ul className="mb-4 flex flex-row">
             <li className='list-none p-2.5 border border-black rounded-lg text-black flex flex-row items-center hover:shadow-lg hover:shadow-black transition duration-500 ease-out hover:ease-in cursor-pointer'>
-              <a href="src\static\files\mycv.pdf" download>My Resume</a>
+              <a href="mycv.pdf" download>My Resume</a>
               <span className="material-symbols-outlined">
                   download
               </span>
