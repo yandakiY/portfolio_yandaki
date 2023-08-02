@@ -1,0 +1,71 @@
+nav{
+    /* Emplacement */
+    /* margin: 20px 20px; */
+
+    /* Display params */
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end; */
+
+    /* position elememnt */
+    /* margin-bottom: 15px; */
+
+    /* Structure */
+    /* border-bottom: solid .5px silver; */
+}
+
+nav #logo{
+    /* size */
+    /* font-size: 50px; */
+    font-family: Poppins;
+    margin-bottom: 15px;
+}
+
+nav ul{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul #myResume{
+    padding: 10px;
+    border:solid 1px;
+    border-radius: 10px;
+
+    /* color */
+    color:black;
+    font-weight: bold;
+
+    /* size */
+    font-size: 20px;
+
+    /* display */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    cursor:pointer;
+
+    /* transition */
+    transition: all ease .5s;
+}
+
+nav ul #myResume:hover{
+    box-shadow: 5px 5px 5px;
+}
+
+nav ul #myResume a{
+
+    /* color */
+    color:black;
+    font-weight: bold;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
