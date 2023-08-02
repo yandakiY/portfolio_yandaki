@@ -1,12 +1,11 @@
-#hero{
+#top{
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
 
 #footer{
-    margin-top: 20px;
+    /* margin-top: 20px;
     position: fixed;
-    bottom:0;
-    
+    bottom:0; */
 }
