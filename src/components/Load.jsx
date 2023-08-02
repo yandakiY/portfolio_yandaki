@@ -48,7 +48,7 @@ function Load() {
     } , [])
 
   return (
-    <div ref={welcome} className='h-screen  text-7xl flex justify-center items-center'>
+    <div ref={welcome} className='h-screen text-7xl flex justify-center items-center'>
         <h1 ref={titleRef} className='title'></h1>
     </div>
   )
