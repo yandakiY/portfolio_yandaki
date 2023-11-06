@@ -48,12 +48,12 @@ export default function CardProject({project}: Props ) {
   return (
     // <div className='border border-slate-300 rounded p-2 flex flex-col items-baseline'>
 
-    <div ref={cardRef} className='border border-slate-300 rounded p-2'>
+    <div ref={cardRef} className='border border-slate-300 rounded p-2 max-h-full'>
       {/* CardProject */}
 
       {/* Image  */}
       <div>
-        <img src={project.image} alt="" />
+        <img src={project.image} alt="" className='w-full h-full md:w-[200] md:h-[380px]'/>
       </div>
       {/* Infos (title , description , link) */}
       <div className='flex flex-col items-stretch'>
@@ -62,12 +62,20 @@ export default function CardProject({project}: Props ) {
           <h3 className='font-bold text-2xl'>{project.titleProject}</h3>
         </div>
         {/* description */}
-        <div className='text-justify text-sm'>
-          {project.description}
+        <div className='text-justify text-sm sm:text-base' title={project.description}>
+          {project.description.substring(0,185)} {"..."}
+        </div>
+        {/* Techs stacks */}
+        <div className='flex flex-row justify-center gap-4 mt-2'>
+          {project.techs_stack.map(tech => 
+            <div key={tech.name} className='cursor-pointer px-4 border border-slate-900 bg-slate-900 rounded text-white font-bold text-sm md:text-base'>
+              {tech.name}
+            </div>
+          )}
         </div>
         {/* link to website */}
         <div className='mt-3'>
-          <a href="#" className='flex justify-center border rounded py-2 px-6 bg-slate-900 text-white font-bold'>View website</a>
+          <a href={project.link} target='_blank' className='flex justify-center border rounded py-2 px-6 bg-slate-900 text-white font-bold'>View website</a>
         </div>
       </div>
     </div>

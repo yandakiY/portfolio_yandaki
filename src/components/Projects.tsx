@@ -2,73 +2,71 @@ import React, { useEffect } from 'react'
 import gsap from 'gsap'
 import CardProject from './CardProject'
 import { useRef } from 'react'
+import wiki from "./img/wiki.png"
+import rando from "./img/rando.png"
 
 export default function Projects() {
 
   var projects: Project[] = [
     {
       id: 1,
-      titleProject: "Title project",
-      image:"",
-      description: "A passionate Software Engineer specializing in web development with expertise in React and Python (Django). My goal is to create powerful, intuitive and elegant web applications. Thanks to my solid academic training and my experience in the development of innovative projects, I am always on the lookout for the latest technologies to solve complex problems in an efficient way.",
-      link: "",
+      titleProject: "Random Quote",
+      image: rando ,
+      description:'"Random Quote" is a simple application that randomly displays inspirational, amusing or informative quotes each time a user loads or refreshes the page. The app is designed to provide a little inspiration or entertainment for the user, or even to share via tweets or screenshots of meaningful messages.' ,
+      link: "https://random-quote-by-yandaki.vercel.app/",
       techs_stack: [
         {
           id_tech: 1,
-          name:'',
+          name:'React',
         },
         {
-          id_tech: 1,
-          name:'',
-        },
-        {
-          id_tech: 1,
-          name:'',
+          id_tech: 2,
+          name:'Tailwind CSS',
         },
       ],
     },
     {
       id: 2,
-      titleProject: "Title project",
-      image:"",
-      description: "A passionate Software Engineer specializing in web development with expertise in React and Python (Django). My goal is to create powerful, intuitive and elegant web applications. Thanks to my solid academic training and my experience in the development of innovative projects, I am always on the lookout for the latest technologies to solve complex problems in an efficient way.",
-      link: "",
+      titleProject: "Wiki Request",
+      image: wiki,
+      description: 'The "Wiki Request" application is a web application that allows users to search for information on Wikipedia by entering a specific keyword. Once the user submits a query, the application queries the Wikipedia API to obtain a list of relevant results.',
+      link: "https://wiki-request.vercel.app/",
       techs_stack: [
         {
           id_tech: 1,
-          name:'',
+          name:'Next JS',
+        },
+        {
+          id_tech: 2,
+          name:'TypeScript',
         },
         {
           id_tech: 1,
-          name:'',
-        },
-        {
-          id_tech: 1,
-          name:'',
+          name:'Tailwind CSS',
         },
       ],
     },
-    {
-      id: 3,
-      titleProject: "Title project",
-      image:"",
-      description: "A passionate Software Engineer specializing in web development with expertise in React and Python (Django). My goal is to create powerful, intuitive and elegant web applications. Thanks to my solid academic training and my experience in the development of innovative projects, I am always on the lookout for the latest technologies to solve complex problems in an efficient way.",
-      link: "",
-      techs_stack: [
-        {
-          id_tech: 1,
-          name:'',
-        },
-        {
-          id_tech: 1,
-          name:'',
-        },
-        {
-          id_tech: 1,
-          name:'',
-        },
-      ],
-    },
+    // {
+    //   id: 3,
+    //   titleProject: "Title project",
+    //   image:"",
+    //   description: "A passionate Software Engineer specializing in web development with expertise in React and Python (Django). My goal is to create powerful, intuitive and elegant web applications. Thanks to my solid academic training and my experience in the development of innovative projects, I am always on the lookout for the latest technologies to solve complex problems in an efficient way.",
+    //   link: "",
+    //   techs_stack: [
+    //     {
+    //       id_tech: 1,
+    //       name:'',
+    //     },
+    //     {
+    //       id_tech: 1,
+    //       name:'',
+    //     },
+    //     {
+    //       id_tech: 1,
+    //       name:'',
+    //     },
+    //   ],
+    // },
   ]
 
   const cardRef = useRef(null)
@@ -113,26 +111,14 @@ export default function Projects() {
 
   useEffect(() => {
     displayTitleProject("#titleProject")
-
-    // slideCard()
     
   } , [])
 
-  
-  // useEffect(() => {
-  //   // Utilisez une séquence pour définir l'ordre d'apparition
-  //   gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: cardRef.current,
-  //       toggleActions: 'play none none none', // L'animation se joue lors du défilement vers le bas
-  //     },
-  //   }).add(slideCard);
-  // })
 
   return (
     <div className='flex flex-col px-4 md:px-8'>
-      <div id="titleProject" className="text-2xl sm:text-4xl font-bold flex flex-row justify-center">
-        My projects :
+      <div id="titleProject" className="text-2xl sm:text-4xl font-bold flex flex-row justify-center mt-10">
+        Projects :
       </div>
 
       {/* Projects */}
