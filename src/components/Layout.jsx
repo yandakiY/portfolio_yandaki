@@ -3,20 +3,21 @@ import '../static/css/Layout.css'
 import Nav from './Nav'
 import Hero from './Hero'
 import Footer from './Footer'
+import Projects from './Projects'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 import { useEffect } from 'react'
-import Load from './Load'
+// import Load from './Load'
 
 gsap.registerPlugin(ScrollTrigger , ScrollToPlugin)
 
 function Layout() {
 
-  const onLoad = () =>{
-    // gsap.timeline().fromTo()
-    console.log('On load...')
-  }
+  // const onLoad = () =>{
+  //   // gsap.timeline().fromTo()
+  //   console.log('On load...')
+  // }
 
   const slideToTop = (e , delay , duration) => {
     gsap.fromTo(
@@ -49,6 +50,13 @@ function Layout() {
           <Nav id="nav" />
           <Hero id="hero" />
         </div>
+
+        {/* Place of projects */}
+        <div id="projects">
+          <Projects />
+        </div>
+
+        {/* Footer */}
         <div>
           <Footer />
         </div>

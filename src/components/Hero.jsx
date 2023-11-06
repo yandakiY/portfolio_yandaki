@@ -32,20 +32,20 @@ function Hero() {
   }
 
   const prompt = (ref) =>{
-    const textElement = ref.current;
-    const text = "Hello world, I'm Yandaki"
-    // console.log(text)
-    textElement.innerText = '';
+      const textElement = ref.current;
+      const text = "Hello world, I'm Yandaki"
+      // console.log(text)
+      textElement.innerText = '';
 
-    let characters = text.split('');
-    characters.forEach((char, index) => {
-      const charElement = document.createElement('span');
-      charElement.innerText = char;
-      charElement.style.visibility = 'hidden';
-      textElement.appendChild(charElement);
+      let characters = text.split('');
+      characters.forEach((char, index) => {
+        const charElement = document.createElement('span');
+        charElement.innerText = char;
+        charElement.style.visibility = 'hidden';
+        textElement.appendChild(charElement);
 
-      gsap.to(charElement, { duration: 2.5, visibility: 'visible', delay: index * 0.1 });
-    });
+        gsap.to(charElement, { duration: 2.5, visibility: 'visible', delay: index * 0.1 });
+      });
   }
 
   useEffect(() => {
@@ -76,13 +76,13 @@ function Hero() {
           <ul className="flex flex-row justify-center gap-10 mt-2 md:mt-14">
             <li className='list-none'>
               <a className='flex flex-row items-center gap-1 sm:gap-3 text-white bg-black hover:bg-gray-500 font-bold p-1 sm:p-3 rounded transition duration-500 ease-out hover:ease-in' target={'_blank'} href="https://github.com/yandakiY" rel="noreferrer">
-                Github
+                Github {""}
                 <i className="fa-brands fa-github"></i>
               </a>
             </li>
             <li>
               <a className='flex flex-row items-center gap-1 sm:gap-3 text-white bg-black hover:bg-gray-500 font-bold p-1 sm:p-3 rounded transition duration-500 ease-out hover:ease-in' target={'_blank'} href={"https://www.linkedin.com/in/yves-michel-boa-431730191/"} rel="noreferrer">
-                Linkedin
+                Linkedin {""}
                 <i className="fa-brands fa-linkedin-in"></i>
               </a>
             </li>

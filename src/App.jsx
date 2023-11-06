@@ -3,7 +3,7 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import Layout from './components/Layout'
-import Nav from './components/Nav'
+// import Nav from './components/Nav'
 
 function App() {
 
