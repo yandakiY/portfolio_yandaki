@@ -2,8 +2,8 @@ import React, { useEffect } from 'react'
 import gsap from 'gsap'
 import CardProject from './CardProject'
 import { useRef } from 'react'
-import wiki from "./img/wiki.png"
-import rando from "./img/rando.png"
+import wiki from './img/wiki.png'
+import rando from './img/rando.png'
 
 export default function Projects() {
 
